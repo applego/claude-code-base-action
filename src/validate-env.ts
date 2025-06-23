@@ -8,6 +8,7 @@ export function validateEnvironmentVariables() {
   const useOAuth = process.env.CLAUDE_CODE_USE_OAUTH === "1";
   const anthropicApiKey = process.env.ANTHROPIC_API_KEY;
 
+  console.log("CLAUDE_EXPIRES_AT", process.env.CLAUDE_EXPIRES_AT);
   console.log("CLAUDE_CODE_USE_OAUTH", process.env.CLAUDE_CODE_USE_OAUTH);
   console.log("useOAuth", useOAuth);
 
